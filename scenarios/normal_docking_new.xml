@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scenario name="normal_docking_new">
+    <Simulation>
+        <duration>5.0</duration>
+        <timestep>0.002</timestep>
+    </Simulation>
+    <PlatformParameters>
+        <mass>50.0</mass>
+        <inertia>
+            <Ixx>5.0</Ixx>
+            <Iyy>5.0</Iyy>
+            <Izz>10.0</Izz>
+        </inertia>
+    </PlatformParameters>
+    <Events>
+        <!-- High force at start to reach 0.258 quickly -->
+        <Contact time="0.5">
+            <Force fx="0.0" fy="0.0" fz="50.0" sensor="1"/>
+            <Force fx="0.0" fy="0.0" fz="50.0" sensor="2"/>
+            <Force fx="0.0" fy="0.0" fz="50.0" sensor="3"/>
+            <Force fx="0.0" fy="0.0" fz="50.0" sensor="4"/>
+            <Force fx="0.0" fy="0.0" fz="50.0" sensor="5"/>
+            <Force fx="0.0" fy="0.0" fz="50.0" sensor="6"/>
+        </Contact>
+        <!-- Main drive to full extension -->
+        <Contact time="1.5">
+            <Force fx="0.0" fy="0.0" fz="120.0" sensor="1"/>
+            <Force fx="0.0" fy="0.0" fz="120.0" sensor="2"/>
+            <Force fx="0.0" fy="0.0" fz="120.0" sensor="3"/>
+            <Force fx="0.0" fy="0.0" fz="120.0" sensor="4"/>
+            <Force fx="0.0" fy="0.0" fz="120.0" sensor="5"/>
+            <Force fx="0.0" fy="0.0" fz="120.0" sensor="6"/>
+        </Contact>
+        <!-- Hold firmly at 0.258 limit -->
+        <Contact time="3.0">
+            <Force fx="0.0" fy="0.0" fz="200.0" sensor="1"/>
+            <Force fx="0.0" fy="0.0" fz="200.0" sensor="2"/>
+            <Force fx="0.0" fy="0.0" fz="200.0" sensor="3"/>
+            <Force fx="0.0" fy="0.0" fz="200.0" sensor="4"/>
+            <Force fx="0.0" fy="0.0" fz="200.0" sensor="5"/>
+            <Force fx="0.0" fy="0.0" fz="200.0" sensor="6"/>
+        </Contact>
+    </Events>
+</Scenario>

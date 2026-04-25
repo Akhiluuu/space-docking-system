@@ -109,6 +109,24 @@ target_include_directories(imgui_lib PUBLIC
 )
 target_link_libraries(imgui_lib PUBLIC glfw glad)
 
+# Mars Stewart Simulation Executable
+add_executable(MarsStewartSimulation
+    src/scenarios_precombined.cpp
+    src/BulletSimulation.cpp
+    src/DockingSimulation.cpp
+    src/DockingPhysicsEngine.cpp
+    src/ScenarioLoader.cpp
+    src/Scenario.cpp
+)
+
+target_include_directories(MarsStewartSimulation PRIVATE
+    include
+    ${eigen3_SOURCE_DIR}
+    ${glm_SOURCE_DIR}
+    ${assimp_SOURCE_DIR}/include
+    ${bullet_SOURCE_DIR}/src
+)
+
 # Main Executable
 add_executable(DtProjectScenarios
     src/leg_joint_viewer.cpp

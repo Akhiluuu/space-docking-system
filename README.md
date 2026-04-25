@@ -21,10 +21,10 @@ The **Leg Joint Viewer** provides a real-time look at how the Stewart Platform's
 
 ## 📂 Project Structure
 
-- `src/`: C++ source logic (Integration, XML parsing, Rendering).
-- `include/`: Header definitions and the data model.
+- `src/`: C++ source logic (Integration, XML parsing, Rendering, and the Mars-specific `scenarios_precombined.cpp`).
+- `include/`: Header definitions and the data model (including `BulletSimulation.h`).
 - `assets/models/`: High-resolution OBJ models for the Stewart Platform.
-- `scenarios/`: XML files defining the docking missions.
+- `scenarios/`: XML files defining the docking missions (includes Mars-specific `_new.xml` files).
 
 ---
 
