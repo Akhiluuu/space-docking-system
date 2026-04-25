@@ -84,12 +84,19 @@ Scenarios are defined in XML and can be modified via the **Event Editor** in the
     ```
 
 ### How to Run
-Once compiled, you can run the executable from the build folder:
+Once compiled, you can run either the main viewer or the Mars-specific simulation:
+
+#### 1. Main Leg Joint Viewer with collision detection (with UI)
 ```powershell
 .\Release\DtProjectScenarios.exe
 ```
 
-### Quick Start Guide
+#### 2. Stewart Simulation with Manual Controls (Scenario-Based)
+```powershell
+.\Release\MarsStewartSimulation.exe
+```
+
+### Quick Start Guide (Leg Joint Viewer)
 1.  **Select Scenario**: Choose a mission (e.g., Normal or Off-Center) from the dashboard.
 2.  **Load Model**: Click **LOAD MODEL** to initialize the meshes and XML data.
 3.  **Start Viz**: Click **START VISUALIZATION** to begin the physics simulation.
@@ -104,3 +111,26 @@ Once compiled, you can run the executable from the build folder:
 - **LOAD MODEL**: Loads the selected XML scenario.
 - **START VISUALIZATION**: Begins the simulation playback.
 - **SAVE & RELOAD**: Saves edited forces from the dashboard back to the XML and restarts the sim.
+
+---
+
+## 🛰 Mars Stewart Simulation
+
+The `MarsStewartSimulation` executable is a specialized version of the platform simulation that focuses on pre-combined mission profiles.
+
+### Unique Features
+- **Dual Camera System**: Toggle between a perspective view and a top-down docking camera.
+- **Split-Screen Mode**: View both cameras simultaneously.
+- **CSV Data Logging**: Automatically logs simulation metrics (XYZ, RPY, Leg Lengths) to a timestamped CSV file.
+- **Direct Controls**: Keyboard-based scenario switching and manual platform overrides.
+
+### Controls (Mars Simulation)
+- **N / O**: Load **Normal** or **Off-Center** mission profiles.
+- **P**: Play / Pause the autonomous docking motion.
+- **C**: Cycle Camera View (Default <-> Top-down).
+- **Z**: Toggle **Split-Screen** mode.
+- **R**: Reset platform to home position.
+- **Manual Overrides**: 
+    - **WASD / Arrows**: XY and Pitch/Yaw adjustment.
+    - **Page Up / Down**: Z-axis height.
+    - **Q / E / U / I**: Advanced Roll and Yaw tuning.
