@@ -3,7 +3,10 @@
 This project is a standalone, high-fidelity 3D visualization and simulation tool for a 6-DOF Stewart Platform. It is designed to simulate and visualize spacecraft docking maneuvers, focusing on the mechanical response of the platform to contact forces.
 
 ## 📺 Video Simulation
-[Watch the Video Simulation Here](https://drive.google.com/file/d/1jWFvHD1v2-1ksuHLuicHKOQ9wc0emPQD/view?usp=sharing)
+[Watch the Video Simulation of leg joint viewer with collision detection and UI Here](https://drive.google.com/file/d/1jWFvHD1v2-1ksuHLuicHKOQ9wc0emPQD/view?usp=sharing)
+
+[Watch the Video Simulation for docking without collision detection using manual controls Here](https://drive.google.com/file/d/1adI8i5Yu0xkk9X6rUj7CPZMptaSSjsO-/view?usp=sharing)
+
 
 ---
 
