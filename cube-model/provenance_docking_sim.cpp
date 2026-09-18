@@ -1,5 +1,5 @@
 /**
-Author: Adithya
+Author: Adithya Balasubramanyam
 **/
 
 #define _USE_MATH_DEFINES
