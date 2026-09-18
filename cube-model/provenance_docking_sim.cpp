@@ -1,3 +1,7 @@
+/**
+Adding new content to check the repository 
+**/
+
 #define _USE_MATH_DEFINES
 #include <cmath>
 #include <iostream>
