@@ -1,5 +1,5 @@
 /**
-Adding new content to check the repository 
+Author: Adithya
 **/
 
 #define _USE_MATH_DEFINES
